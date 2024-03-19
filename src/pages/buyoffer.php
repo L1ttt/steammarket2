@@ -14,7 +14,7 @@ $username = $_SESSION["username"];
 $sql = "SELECT offer.idoffer, case.name, offer.price, offer.seller FROM asignment.offer
 join asignment.case
 on case.id = offer.caseid
-Where case.name = '$casename' AND offer.seller != '$username' offer.buyer IS NULL;";
+Where case.name = '$casename' AND offer.seller != '$username' AND offer.buyer IS NULL;";
 $queryResult = mysqli_query($con, $sql);
 echo "<table width='100%'>";
 echo "<tr><th>Case </th><th>Price</th><th>Seller</th><th></th></tr>";

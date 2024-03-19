@@ -1,0 +1,58 @@
+{
+  "cases": [
+    {
+      "id": "65a696639adf3d5ee93ff226",
+      "name": "Dreams & Nightmares Case",
+      "image": "src/assets/images/case/case1.png",
+      "quantity": 698,
+      "buy_price": "24.5CC",
+      "sale_price": "60.7CC",
+      "container_series": "#472"
+    },
+    {
+      "id": "65a69663829216ce7f903895",
+      "name": "Fracture Case",
+      "image": "src/assets/images/case/case2.png",
+      "quantity": 684,
+      "buy_price": "64.1CC",
+      "sale_price": "59.4CC",
+      "container_series": "#540"
+    },
+    {
+      "id": "65a69663b4cfe34424df31c6",
+      "name": "Snakebite Case",
+      "image": "src/assets/images/case/case3.png",
+      "quantity": 866,
+      "buy_price": "51.6CC",
+      "sale_price": "45.8CC",
+      "container_series": "#558"
+    },
+    {
+      "id": "65a6966375dabdfa9fba140e",
+      "name": "Revolution Case",
+      "image": "src/assets/images/case/case4.png",
+      "quantity": 631,
+      "buy_price": "61.1CC",
+      "sale_price": "61.9CC",
+      "container_series": "#921"
+    },
+    {
+      "id": "65a6966316b70d25f3bef801",
+      "name": "Gamma Case",
+      "image": "src/assets/images/case/case5.png",
+      "quantity": 537,
+      "buy_price": "30.7CC",
+      "sale_price": "35.2CC",
+      "container_series": "#612"
+    },
+    {
+      "id": "65a696639d484e73ecac5bc7",
+      "name": "Recoil Case",
+      "image": "src/assets/images/case/case6.png",
+      "quantity": 793,
+      "buy_price": "37.2CC",
+      "sale_price": "55.7CC",
+      "container_series": "#956"
+    }
+  ]
+}

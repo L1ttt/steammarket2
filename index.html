@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata for character set and responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Stylesheets and favicon -->
+    <link rel="stylesheet" href="src/styles/interface-style.css" />
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="stylesheet" href="src/styles/subpages-responsive.css" />
+    <link rel="icon" href="public/logo_transparent.png" />
+
+    <!-- Title of the page -->
+    <title>Cr1pt0 Market, The Ultimate Online Market Platform</title>
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <div id="header">
+      <!-- Toggleable menu icon -->
+      <div id="togglable-menu">
+        <input type="checkbox" id="toggle" />
+        <label for="toggle" id="toggle-button" onclick="openNav()">&#9776;</label>
+      </div>
+
+      <!-- Side Navigation Bar -->
+      <div id="side-nav">
+        <a href="javascript:void(0)" id="close-button" onclick="closeNav()">&times;</a>
+        <a href="index.html">STORE</a>
+        <a href="src/pages/about.html">ABOUT</a>
+        <a href="src/pages/support.html">SUPPORT</a>
+        <a href="src/pages/exchange.html">EXCHANGE</a>
+        <a href="src/pages/login.html">LOGIN</a>
+      </div>
+
+      <!-- Main Navigation Bar -->
+      <nav id="nav-bar">
+        <a href="index.html" id="logo-link"
+          ><img src="public/logo_transparent.png" alt="Cr1pt0 Market logo" width="15%" id="header-logo"
+        /></a>
+        <ul id="menu">
+          <li><a href="index.html" class="main-nav-links">STORE</a></li>
+          <li><a href="src/pages/about.html" class="main-nav-links">ABOUT</a></li>
+          <li><a href="src/pages/support.html" class="main-nav-links">SUPPORT</a></li>
+          <li><a href="src/pages/exchange.html" class="main-nav-links">Exchange</a></li>
+          <li><a href="src/pages/profile.php" class="main-nav-links">Profile</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="main">
+      <div class="market-tab-container">
+        <div style="background: #171a21">
+          <button onclick="displayText1()" href="" class="market-button">
+            My Active Listings
+          </button>
+          <button onclick="displayText2()" href="" class="market-button">
+            My Market History
+          </button>
+          <button onclick="displayText3()" href="" class="market-button">
+            Sell An Items
+          </button>
+        </div>
+        <div class="container">
+          <div id="my-active-listing" class="market-tab">
+            <p>
+              <a href="src/pages/profile.html" style="text-decoration: none; color: white">Login</a>
+              to see, edit, or remove your Cr1pt0 Market listings.
+            </p>
+          </div>
+          <div id="market-history" style="display: none" class="market-tab">
+            <p>You don't have any history on the Cr1pt0 Market.</p>
+          </div>
+          <div id="sell-an-items" style="display: none" class="market-tab">
+            <p>
+              You need to
+              <a href="src/pages/profile.html" style="text-decoration: none; color: white">Login</a>
+              to do that.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="products">
+        <div class="case-nav">
+          <a href="#">Popular Items</a>
+          <a href="#">Newly Listed</a>
+          <a href="#">Recently sold</a>
+          <input
+            type="text"
+            id="case-search"
+            onkeyup="searchFunction()"
+            placeholder="Search.."
+            style="font-size: 17px"
+          />
+        </div>
+        <ul id="case-data"></ul>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+      <div id="logo">
+        <a href="index.html" id="logo-link"
+          ><img src="public/logo_transparent.png" alt="Cr1pt0 Market logo"
+        /></a>
+      </div>
+
+      <!-- Copyright and additional information -->
+      <div>
+        <p>
+          &copy; Cr1pt0 Market. All rights reserved. All trademarks are property of their respective
+          owners in Vietnam and other countries.
+        </p>
+        <p>
+          Some geospatial data on this website is provided by
+          <a href="index.html">Cr1pt0market.org</a>.
+        </p>
+
+        <!-- Navigation links for privacy policy, legal, subscriber agreement, and cookies -->
+        <nav>
+          <ul>
+            <li><a href="src/pages/support.html">Privacy Policy</a></li>
+            <li><a href="src/pages/support.html">Legal</a></li>
+            <li><a href="src/pages/support.html">Cr1pt0 Market Subscriber Agreement</a></li>
+            <li><a href="src/pages/about.html">Cookies</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Support JavaScript file -->
+    <script src="src/scripts/case-api.js"></script>
+    <script src="src/scripts/transition.js"></script>
+  </body>
+</html>

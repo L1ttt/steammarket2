@@ -1,0 +1,290 @@
+.clear {
+  clear: both;
+}
+
+#main {
+  padding: 1rem 0;
+}
+
+.market-tab-container {
+  margin: 0 20%;
+}
+
+.market-tab {
+  background-color: #212c3d;
+  padding: 1em;
+}
+
+.market-button {
+  background: #171a21;
+  cursor: pointer;
+  border: none;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.market-button:hover {
+  background-color: #688f3e;
+}
+
+.container {
+  margin: 0.8rem 0;
+  text-decoration: none;
+  color: lightgrey;
+}
+.history-head {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: black solid 1px;
+  padding: 0.5rem;
+}
+
+.case-display {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+.case-display:hover {
+  box-shadow: 0 6px 20px 0 #67c1f5;
+  border-radius: 10px;
+}
+.products {
+  margin: 3rem;
+}
+#case-data {
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  font-weight: bolder;
+  gap: 2em;
+  padding: 0;
+}
+
+/* Add a black background color to the top navigation bar */
+.case-nav {
+  display: flex;
+  background-color: #171a21;
+}
+
+/* Style the links inside the navigation bar */
+.case-nav a {
+  color: white;
+  padding: 1em;
+  text-decoration: none;
+  width: 25%;
+  text-align: center;
+}
+
+/* Change the color of links on hover */
+.case-nav a:hover {
+  background-color: #688f3e;
+}
+
+#case-search {
+  width: 80%;
+  margin: 0.5rem;
+  background-color: #324965;
+  border: none;
+  color: #ffffff;
+}
+
+.main-profile-bg {
+  background-image: url(../../public/profile-bg.png);
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.profile-bg {
+  background-color: #1b2838;
+  width: 1000px;
+  padding: 2em;
+  
+
+}
+
+.profile-header {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+.user-ava {
+  width: 15%;
+}
+.user-info {
+  display: flex;
+}
+
+.user-wallet {
+  color: white;
+  margin: 1em 3em;
+}
+
+.profile-link {
+  text-decoration: none;
+  color: lightgray;
+}
+
+.profile-link:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+hr {
+  border: 0.5px solid black;
+}
+
+.case-container {
+  color: rgba(255, 255, 255, 0.7);
+  padding: 15px;
+  margin: 15px auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  padding-bottom: 90px;
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nd-container {
+  position: relative;
+  height: 422px;
+  padding: 11px;
+  width: 100%;
+  margin: 0%;
+}
+.case-text {
+  height: 74px;
+  margin: 0%;
+}
+.case-img {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  margin: 0%;
+}
+.case-inf {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  margin: 0%;
+}
+.case-inf h2 {
+  color: white;
+  margin: 0;
+  margin-bottom: 9px;
+}
+.container-series {
+  color: cyan;
+  margin-bottom: 3px;
+  margin: 0;
+}
+.sell-buy-container {
+  position: relative;
+  height: 338px;
+  padding: 15px 0;
+  margin-top: 60px !important;
+  width: 100%;
+  margin: 0;
+}
+.buy,
+.sell {
+  position: absolute;
+  border: 1px solid black;
+  width: 40%;
+  padding: 15px 0;
+  margin: 0;
+  text-align: center;
+}
+.buy {
+  left: 5%;
+  margin: 0;
+}
+.sell {
+  right: 5%;
+  margin: 0;
+}
+
+.case-container table {
+  margin: 12px auto;
+  text-align: center;
+}
+.case-container td,
+.case-container th {
+  width: 100px;
+  margin: 0%;
+}
+.case-container tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+.case-container button {
+  background-image: url(/src/assets/images/market_banner.jpg);
+  width: 60%;
+  height: 54px;
+  text-align: center;
+  margin: 9px 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 26px;
+  padding: 0 15px;
+  margin-top: 12px !important;
+  margin: 0;
+  border: none;
+}
+.case-container button:hover {
+  color: white;
+}
+.graph {
+  width: 100% !important;
+  margin: 0;
+}
+.case-container h1 {
+  font-size: 2vw;
+  margin: 0;
+}
+
+.case-container p,
+.case-container li {
+  font-size: 0.8vw;
+  margin: 0;
+}
+.case-container img {
+  width: 80%;
+  margin: 0;
+}
+
+#sell-an-items .sell-input,
+.sell-button {
+  width: calc(100% - 2rem); /* Full width minus margin for inputs and buttons */
+  margin: 0.5rem; /* Adjust margin */
+  padding: 0.5rem; /* Adjust padding */
+}
+
+/* Styling for login and register form */
+#sell-an-items {
+  background-color: #212c3d;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.sell-input {
+  width: 90%;
+  background-color: #32353c;
+  color: white;
+  border: none;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.submit-form {
+  display: flex;
+  justify-content: center;
+}
+.sell-button {
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(to right, #2b75ff 0%, #2b75ff 0, #07beff 50%, #07beff 100%);
+  color: white;
+  padding: 0.7rem 4em;
+  text-decoration: none;
+  font-size: large;
+  text-align: center;
+}

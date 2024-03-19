@@ -53,7 +53,11 @@ function showCaseDetail(data) {
   <div class="sell-buy-container">
       <div class="buy">
           <p>${items.quantity} for sale starting at ${items.buy_price}</p>
-          <button>BUY...</button>
+          <form action="buyoffer.php" method="post">
+    <input type="hidden" value="${items.name}" name="casename">
+    <button type="submit">BUY...</button>
+</form>
+          
           <hr >
           <table>
               <tr>
@@ -84,7 +88,7 @@ function showCaseDetail(data) {
       </div>
       <div class="sell">
           <p> requests to buy at ${items.sale_price} or lower </p>
-          <button>SELL...</button>
+          <button><a href="profile.php">SELL...</a></button>
           <hr>
           <table>
               <tr>

@@ -10,8 +10,8 @@ require('db.php');
         $email    = mysqli_real_escape_string($con, $email);
         $password = $_POST['psw'];
         $password = mysqli_real_escape_string($con, $password);
-        $query    = "INSERT into `login` (username, password, email)
-                     VALUES ('$username', '$password', '$email')";
+        $query    = "INSERT into `login` (username, password, email, credit)
+                     VALUES ('$username', '$password', '$email', 0)";
         $result   = mysqli_query($con, $query);
 
         if ($result ) {

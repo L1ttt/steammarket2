@@ -10,11 +10,11 @@
 require('db.php');
 session_start();
 $casename = $_POST["casename"];
-$username = $_SESSION['username'];
+$username = $_SESSION["username"];
 $sql = "SELECT offer.idoffer, case.name, offer.price, offer.seller FROM asignment.offer
 join asignment.case
 on case.id = offer.caseid
-Where case.name = '$casename'";
+Where case.name = '$casename' AND offer.seller != '$username' offer.buyer IS NULL;";
 $queryResult = mysqli_query($con, $sql);
 echo "<table width='100%'>";
 echo "<tr><th>Case </th><th>Price</th><th>Seller</th><th></th></tr>";
@@ -25,13 +25,14 @@ while ($row) {
     echo "<td>{$row[3]}</td>"; 
     echo "<td><form action='buyoffer-process.php' method='post'>
     <input type='hidden' value='{$row[0]}' name='idoffer'>
+    
     <button type='submit'>BUY</button>
 </form></td>";
     $row = mysqli_fetch_row($queryResult);
 }
 echo "</table>";
 mysqli_free_result($queryResult);
-mysqli_close($con);
+
 
 
 
